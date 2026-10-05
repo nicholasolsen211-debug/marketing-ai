@@ -4,8 +4,8 @@
 - System and environment: Smartsheet form titled "New Purchase Requisition Request Form". The live link, cost center codes and tracking-sheet IDs are kept in the internal work system, not here.
 - Workflow: raising a purchase requisition (PR) for event costs, physician payments and marketing vendors.
 - Owner / proposed reviewer: Kaelyn Gray (Vision event marketing); maintainer review by @the-digital-nicholas-olsen.
-- Status: draft
-- Source and observed date: Kaelyn's working rules, plus the live form's field labels and dropdown values. Both were read on 2026-10-01, but nothing was submitted.
+- Status: draft — revised for Kaelyn review; business rules are not yet approved.
+- Source and observed date: Kaelyn's working rules, plus the live form's field labels and dropdown values. Both were read on 2026-10-01, but nothing was submitted. The general-purpose form and its required `Date` field were rechecked on 2026-10-05. The live form labels the field `Date`, not event start date, and does not define which date to use. Event-date and other field defaults below are proposed Vision workflow rules, not form-enforced requirements.
 
 ## Use this when
 
@@ -13,7 +13,9 @@ You need to fill out the PR request form for Vision Marketing spend. An AI may f
 
 ## Required inputs
 
-What the money is for, the payee, the amount, how it will be paid (ACH or company card), the related event (if any), and any invoice or agreement.
+What the money is for, the payee, the amount, how it will be paid (ACH or company card), the related event (if any), the applicable date, and any invoice or agreement.
+
+The form supports both event and non-event purchases. Use the internal guide for the live form link and approved US Vision Marketing cost center; those are shared team prerequisites, not personal credentials. If a required value or applicable date is missing, ask the requester or procurement owner before completing that field.
 
 ## Field rules
 
@@ -21,13 +23,13 @@ What the money is for, the payee, the amount, how it will be paid (ACH or compan
 |---|---|
 | Business Area | `Vision`. The options seen were Aesthetic, Vision and Hospital. If the request is for an Aesthetics-only or Hospital item, flag it instead of switching on your own. |
 | Short/Header Text * | See the formula below. |
-| Material * | `LUMINARIES` when paying a physician. `WORKSHOPS` for Accelerate events only. `TRADE SHOW EXPENSES` for everything else. All three values were in the dropdown, which has 14 options. |
+| Material * | `LUMINARIES` when paying a physician. `WORKSHOPS` for Accelerate events only. `TRADE SHOW EXPENSES` for trade show spending. For other non-event spending, confirm the category with the requester or procurement owner instead of treating trade show expenses as a universal default. All three values were observed in the dropdown on 2026-10-01. |
 | Cost Center * | The US Vision Marketing cost center from the dropdown. The exact value is in the internal guide. |
 | PGR * | The same value as Cost Center. On 2026-10-01 the PGR dropdown had the same 39 options as Cost Center. |
 | Vendor # | Leave blank. |
-| Vendor Name | For a physician: `Dr. <Last>`, or `Dr. <First> <Last>` if you know the first name. For ACH: the company named in the header text. For a company card: the card provider (name in the internal guide). |
+| Vendor Name | For physician payments by ACH: `Dr. <First> <Last>`; obtain the full name if missing. For other ACH payments: the company named in the header text. For company-card payments: the card provider from the internal guide. Confirm any exception with procurement; do not use a personal card or account by default. |
 | Amount * | Comes with each request. |
-| Date * | The **first day of the related event**, not the invoice date. This applies to every PR. |
+| Date * | Required for every request. For event-related spending, use the **first day of the related event** under the proposed Vision rule. For non-event spending, use the applicable date confirmed by the requester or procurement owner; do not invent an event or automatically substitute the invoice or submission date. |
 | Additional Comments | Optional. |
 | File Upload | Attach the related invoice or agreement when there is one. |
 | Send me a copy of my responses | Check the box and enter the **submitter's own** email. |
@@ -35,7 +37,7 @@ What the money is for, the payee, the amount, how it will be paid (ACH or compan
 ## Short/Header Text formula
 
 ```
-Q<quarter><two-digit year><business-area letter> - <event or person> <what the money is for>
+Q<quarter><two-digit year><business-area letter> - <event, person or vendor> <what the money is for>
 ```
 
 The business-area letter is `V` for Vision. The form's own help text also allows `A` and `H`. When a physician is named, write their full name with the title: `Dr. <First> <Last>`.
@@ -58,13 +60,15 @@ Fictional examples showing each pattern:
 
 ## Avoid
 
-- Using the invoice date as Date. Example: an invoice dated after the show still takes the show's first day.
+- Automatically using the invoice date for event spending. Under the proposed Vision rule, an invoice dated after the show still takes the show's first day.
+- Requiring an event for a non-event purchase, guessing its date, or categorizing all non-event spending as trade show expenses.
 - Using `WORKSHOPS` for anything that isn't an Accelerate.
 - Writing a physician's last name only. Older PR records do this, but new PRs use the full name.
 - Submitting the form without the requester's review. This form has been seen to clear itself after sitting open for a while, so check every field again right before submitting.
 
 ## Missing information / decisions
 
-- Whether the exact cost center value, card provider name and form link can be published in this public repository. They are left out until Nicholas or the division owner decides.
+- Keep the exact cost center value, card provider name and form link in the internal guide. Publishing them is not required to use this procedure.
+- Kaelyn/procurement review: confirm the event-start-date convention, dates for non-event purchases, category choices for non-event spend, and the vendor-name rule for any physician payment made by company card.
 - Older tracking data sometimes uses `A` for Aesthetics rows that relate to Vision and uses inconsistent dash spacing. These are known inconsistencies, not rules.
 - Approval evidence and review date: blank until approved.
