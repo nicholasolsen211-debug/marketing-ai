@@ -2,6 +2,7 @@
 title: James G. Chelnis, MD, FACS
 credentials: MD, FACS
 affiliation: Manhattan Face & Eye / Mount Sinai (New York, NY)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

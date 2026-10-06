@@ -2,6 +2,7 @@
 title: Celesta Ferreira, OD
 credentials: OD
 affiliation: Cypress Optique (Cypress, TX)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

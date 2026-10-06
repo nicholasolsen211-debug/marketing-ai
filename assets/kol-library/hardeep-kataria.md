@@ -2,6 +2,7 @@
 title: Hardeep Kataria, OD, FAAO
 credentials: OD, FAAO
 affiliation: Avant Eyes Optometry & Advanced Dry Eye Center (Porter Ranch, CA)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

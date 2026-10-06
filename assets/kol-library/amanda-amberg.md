@@ -2,6 +2,7 @@
 title: Amanda Amberg, OD
 credentials: OD
 affiliation: Hollywood Eye Institute (Hollywood / Cooper City, FL)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

@@ -2,6 +2,7 @@
 title: Jenn Chinn, OD
 credentials: OD
 affiliation: Dr. Chinn's Vision Care (San Diego, CA)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

@@ -2,6 +2,7 @@
 title: Kiranjeet Sran, OD
 credentials: OD
 affiliation: Lumos Eyecare, inside Costco (Bridgewater, NJ)
+division: [Vision]
 status: source-derived; incomplete — verify before external use
 checked: 2026-09-08
 ---

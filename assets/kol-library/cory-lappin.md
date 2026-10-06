@@ -2,6 +2,7 @@
 title: Cory J. Lappin, OD, MS, FAAO
 credentials: OD, MS, FAAO
 affiliation: The Dry Eye Center of Ohio, LLC (Cincinnati/Montgomery, OH)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

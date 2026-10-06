@@ -2,6 +2,7 @@
 title: Laura M. Periman, MD
 credentials: MD
 affiliation: Periman Eye Institute (Seattle, WA)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---
