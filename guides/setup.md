@@ -45,14 +45,7 @@ gh auth setup-git
 
 ## Clone
 
-Clone outside OneDrive or other synced folders, for example into your user folder. Turn off Git's Windows line-ending conversion; the validator and skill metadata expect Unix (LF) line endings, and conversion would also make every edited line show as changed:
-
-```powershell
-cd $env:USERPROFILE
-git clone -c core.autocrlf=false https://github.com/the-digital-nicholas-olsen/marketing-ai.git
-```
-
-If you already cloned without that option and `node scripts/validate.mjs` reports `Invalid skill metadata` for every skill, commit or stash your edits first, then from the repository root run `git config core.autocrlf false; git rm -r --cached -q .; git reset --hard -q`. The last command discards uncommitted changes.
+Clone into C:\Users\[User Name].
 
 ## Verify
 
