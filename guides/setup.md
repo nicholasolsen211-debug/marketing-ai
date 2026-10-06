@@ -4,7 +4,59 @@ Clone this repository onto your own native filesystem and open its root in Codex
 
 Codex uses the canonical `.agents/skills/` files. Claude Code uses the generated `.claude/skills/` files and CLAUDE.md. These are repository skill folders, not a claim that this repo is already a packaged plugin for every Claude or Codex interface. Verify skill discovery in the client you use.
 
-Install Node.js 22 or newer for the helpers. From the repository root:
+## Install tools on a Lumenis work laptop
+
+You need Git, Node.js 22 or newer for the helpers, and GitHub CLI (`gh`) for pull requests. Work laptops often block administrator prompts, so the steps below install for your account only. Run them in PowerShell, then open a **new** PowerShell window so the updated PATH takes effect. If `winget` itself is blocked, ask IT to install all three.
+
+**Git.** Git for Windows can install for your own account:
+
+```powershell
+winget install --id Git.Git -e --source winget
+```
+
+**Node.js and GitHub CLI.** Try `winget install --id OpenJS.NodeJS.LTS -e` and `winget install --id GitHub.cli -e` first. If either says `You cancelled the installation` (exit code 1602) when you did not decline a prompt, the laptop is blocking administrator installs. Use the official portable zips instead. Set the versions to the current Node.js LTS (22 or newer) and the latest [GitHub CLI release](https://github.com/cli/cli/releases):
+
+```powershell
+$node = "24.19.0"; $gh = "2.102.0"
+$tools = "$env:USERPROFILE\tools"; New-Item -ItemType Directory -Force $tools | Out-Null
+$nodeZip = "node-v$node-win-x64.zip"; $ghZip = "gh_${gh}_windows_amd64.zip"
+Invoke-WebRequest "https://nodejs.org/dist/v$node/$nodeZip" -OutFile "$tools\$nodeZip" -UseBasicParsing
+Invoke-WebRequest "https://github.com/cli/cli/releases/download/v$gh/$ghZip" -OutFile "$tools\$ghZip" -UseBasicParsing
+Get-FileHash "$tools\$nodeZip", "$tools\$ghZip"
+```
+
+Compare each hash with the matching line in `https://nodejs.org/dist/v<version>/SHASUMS256.txt` and the `gh_<version>_checksums.txt` file on the GitHub CLI release page. Stop if either differs. Then extract and add both to your user PATH:
+
+```powershell
+Expand-Archive "$tools\$nodeZip" $tools -Force; Rename-Item "$tools\node-v$node-win-x64" node
+Expand-Archive "$tools\$ghZip" "$tools\gh" -Force; Remove-Item "$tools\*.zip"
+$path = [Environment]::GetEnvironmentVariable('Path', 'User')
+[Environment]::SetEnvironmentVariable('Path', "$path;$tools\node;$tools\gh\bin", 'User')
+```
+
+**Sign in to GitHub.** In a new window, run the commands below. The first shows a one-time code and opens github.com to approve it. The second lets Git push with the same login. Never paste tokens or passwords into an AI chat or this repository.
+
+```powershell
+gh auth login --web --git-protocol https
+gh auth setup-git
+```
+
+**Check.** `git --version`, `node --version` (22 or newer) and `gh auth status` should all succeed.
+
+## Clone
+
+Clone outside OneDrive or other synced folders, for example into your user folder. Turn off Git's Windows line-ending conversion; the validator and skill metadata expect Unix (LF) line endings, and conversion would also make every edited line show as changed:
+
+```powershell
+cd $env:USERPROFILE
+git clone -c core.autocrlf=false https://github.com/the-digital-nicholas-olsen/marketing-ai.git
+```
+
+If you already cloned without that option and `node scripts/validate.mjs` reports `Invalid skill metadata` for every skill, commit or stash your edits first, then from the repository root run `git config core.autocrlf false; git rm -r --cached -q .; git reset --hard -q`. The last command discards uncommitted changes.
+
+## Verify
+
+From the repository root:
 
 ```sh
 node scripts/validate.mjs
