@@ -4,7 +4,7 @@ Clone this repository onto your own native filesystem and open its root in Codex
 
 Codex uses the canonical `.agents/skills/` files. Claude Code uses the generated `.claude/skills/` files and CLAUDE.md. These are repository skill folders, not a claim that this repo is already a packaged plugin for every Claude or Codex interface. Verify skill discovery in the client you use.
 
-## Install tools on a Lumenis work laptop
+## Install tools on a work laptop
 
 You need Git, Node.js 22 or newer for the helpers, and GitHub CLI (`gh`) for pull requests. Work laptops might block administrator prompts, so the steps below install for your account only. Run them in PowerShell, then open a **new** PowerShell window so the updated PATH takes effect..
 
