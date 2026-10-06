@@ -6,7 +6,7 @@ Codex uses the canonical `.agents/skills/` files. Claude Code uses the generated
 
 ## Install tools on a Lumenis work laptop
 
-You need Git, Node.js 22 or newer for the helpers, and GitHub CLI (`gh`) for pull requests. Work laptops often block administrator prompts, so the steps below install for your account only. Run them in PowerShell, then open a **new** PowerShell window so the updated PATH takes effect. If `winget` itself is blocked, ask IT to install all three.
+You need Git, Node.js 22 or newer for the helpers, and GitHub CLI (`gh`) for pull requests. Work laptops might block administrator prompts, so the steps below install for your account only. Run them in PowerShell, then open a **new** PowerShell window so the updated PATH takes effect..
 
 **Git.** Git for Windows can install for your own account:
 
