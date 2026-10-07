@@ -2,6 +2,7 @@
 title: Chandler R. Mann II, OD
 credentials: OD
 affiliation: Stone Oak Vision Source (San Antonio, TX)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

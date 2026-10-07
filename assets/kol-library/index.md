@@ -1,18 +1,22 @@
 ---
 title: KOL biography and headshot library
-summary: Library of 15 Lumenis KOL biographies with source references and web-ready headshot candidates in the HubSpot image library.
+summary: Library of 16 Lumenis KOL biographies, grouped by division, with source references and web-ready headshot candidates in the HubSpot image library.
 status: source-derived; verify each entry before external use
 owner: Ted Carmichael
-reviewed: 2026-09-09
+reviewed: 2026-10-05
 ---
 
 # KOL library
 
-Initial library of key opinion leaders (KOLs) referenced in Lumenis marketing content. Each entry below was built from public sources (practice or institution websites, professional directories) and includes a longer and shorter biography, source links with the date checked, and a candidate headshot with its source and any known reuse restrictions.
+Library of key opinion leaders (KOLs) referenced in Lumenis marketing content. Each entry below was built from public sources (practice or institution websites, professional directories) and includes a longer and shorter biography, source links with the date checked, and a candidate headshot with its source and any known reuse restrictions.
 
-**Read before using any entry:** a publicly available biography or photo is not, by itself, permission to reuse it in Lumenis marketing materials. Each profile links to its web-ready HubSpot candidate and preserves known source or restriction notes. All 15 are also indexed in the [shared image catalog](../image-library/catalog.md) under `kol-headshots`. Confirm rights and the intended brand use with the KOL, practice or responsible Lumenis owner before external publication.
+**Read before using any entry:** a publicly available biography or photo is not, by itself, permission to reuse it in Lumenis marketing materials. Each profile links to its web-ready HubSpot candidate and preserves known source or restriction notes. The 15 Vision headshots are also indexed in the [shared image catalog](../image-library/catalog.md) under `kol-headshots`. Confirm rights and the intended brand use with the KOL, practice or responsible Lumenis owner before external publication.
 
-## Entries
+## Divisions
+
+Each profile's frontmatter has a `division` list naming the Lumenis business units the KOL works with: `Vision`, `Aesthetics` or `Hospital`. A KOL who works across units lists each one, for example `division: [Vision, Aesthetics]`, and appears in each matching table below. All profiles stay in this one folder whatever their division, so links to a profile don't break if its division changes.
+
+## Vision
 
 | KOL | Affiliation | Bio file | Headshot status |
 |---|---|---|---|
@@ -32,10 +36,21 @@ Initial library of key opinion leaders (KOLs) referenced in Lumenis marketing co
 | Kiranjeet Sran, OD | Lumos Eyecare, inside Costco (Bridgewater, NJ) | [kiranjeet-sran.md](./kiranjeet-sran.md) | HubSpot candidate; provided by Ted; rights unverified |
 | Sandra Zhang, OD | Gemini Optometry (Moreno Valley, CA) | [sandra-zhang.md](./sandra-zhang.md) | HubSpot candidate; provided by Ted; rights unverified |
 
+## Aesthetics
+
+| KOL | Affiliation | Bio file | Headshot status |
+|---|---|---|---|
+| Michael H. Gold, MD, FAAD | Gold Skin Care Center (Nashville, TN) | [michael-gold.md](./michael-gold.md) | Practice-site source found; not yet in HubSpot catalog; rights unverified |
+
+## Hospital
+
+No entries yet.
+
 ## Known gaps
 
 - **Kiranjeet Sran and Sandra Zhang:** formal education/credentials beyond "OD" were not published on their practice sites or in secondary sources found during this pass. Both are KOLs Ted already has a working relationship with — fastest fix is asking them directly.
 - **Patricia Fulmer:** the available source is 403 pixels wide. Use only for small placements or request a larger file.
+- **Michael H. Gold:** education and residency were not published on his practice site or IMCAS profile. The only Lumenis-hosted image is a 139×129 agenda thumbnail. The practice-site photo needs a rights check before it goes through the `lumenis-image-library` workflow.
 - No headshot in this library has documented reuse clearance in this public repository. Public availability or a HubSpot URL is not reuse approval.
 
 ## Next steps

@@ -2,6 +2,7 @@
 title: Sahil A. Dosaj, OD
 credentials: OD
 affiliation: Miller Optometry (Yucaipa, CA)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

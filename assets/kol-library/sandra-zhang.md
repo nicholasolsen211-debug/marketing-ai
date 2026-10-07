@@ -2,6 +2,7 @@
 title: Sandra Zhang, OD
 credentials: OD
 affiliation: Gemini Optometry (Moreno Valley, CA)
+division: [Vision]
 status: source-derived; incomplete — verify before external use
 checked: 2026-09-08
 ---

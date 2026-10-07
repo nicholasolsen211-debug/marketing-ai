@@ -2,6 +2,7 @@
 title: Maria Sampalis, OD
 credentials: OD
 affiliation: Sampalis Eye Care (Cranston, RI)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

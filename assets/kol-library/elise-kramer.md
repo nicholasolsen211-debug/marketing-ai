@@ -2,6 +2,7 @@
 title: Elise Kramer, OD, FAAO, FSLS
 credentials: OD, FAAO, FSLS
 affiliation: Miami Contact Lens Institute (Miami, FL)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---

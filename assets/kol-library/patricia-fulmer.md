@@ -2,6 +2,7 @@
 title: Patricia Fulmer, OD, FAAO
 credentials: OD, FAAO
 affiliation: Legacy Vision Center (Huntsville, AL)
+division: [Vision]
 status: source-derived; verify before external use
 checked: 2026-09-08
 ---
