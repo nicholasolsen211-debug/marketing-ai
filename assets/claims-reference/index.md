@@ -3,7 +3,7 @@ title: Claims reference index
 summary: Master index of the claims-reference library, across all products covered so far.
 status: source-derived; verify each entry before external use
 owner: Kaelyn Gray
-reviewed: 2026-09-16
+reviewed: 2026-10-09
 ---
 
 # Claims reference index
@@ -15,11 +15,29 @@ See [README.md](README.md) for scope, fields and how to add an entry. Check prod
 | Product | File | Claims | Confirmed | Needs review |
 |---|---|---|---|---|
 | Lumenis corporate | [lumenis-corporate.md](lumenis-corporate.md) | 1 | 1 | 0 |
-| OptiLIFT | [optilift.md](optilift.md) | 10 | 5 | 5 |
-| OptiLIGHT | [optilight.md](optilight.md) | 18 | 6 | 12 |
-| OptiPLUS | [optiplus.md](optiplus.md) | 3 | 2 | 1 |
+| OptiLIFT | [optilift.md](optilift.md) | 23 | 4 | 19 |
+| OptiLIGHT | [optilight.md](optilight.md) | 42 | 7 | 35 |
+| OptiPLUS | [optiplus.md](optiplus.md) | 12 | 2 | 10 |
+| Digital Duet | [digital-duet.md](digital-duet.md) | 18 | 0 | 18 |
+| triLIFT for Eye Care | [trilift-eye-care.md](trilift-eye-care.md) | 12 | 0 | 12 |
+| triLIFT for Aesthetics | [trilift-aesthetics.md](trilift-aesthetics.md) | 14 | 0 | 14 |
+| UltraPulse (CO2) | [ultrapulse.md](ultrapulse.md) | 18 | 0 | 18 |
+| AcuPulse | [acupulse.md](acupulse.md) | 18 | 0 | 18 |
+| Retina and glaucoma lasers | [retina-and-glaucoma-lasers.md](retina-and-glaucoma-lasers.md) | 1 | 0 | 1 |
+| Antares | [antares.md](antares.md) | 0 | 0 | 0 |
+| Optima IPL and M22 (legacy) | [optima-ipl-and-m22.md](optima-ipl-and-m22.md) | 14 | 0 | 14 |
 
 "Confirmed" means a public source was located and its content was checked against the specific claim during this review — not that the claim is cleared for external use. "Needs review" entries say specifically what's unresolved (missing citation, unlocatable source, unpublished evidence, or a number that doesn't reconcile with the cited source).
+
+## Update 2026-10-09
+
+This update extended the library from three products to every product with material on file, and re-read the three existing products against the newest revision on file of each document.
+
+- Every earlier row is kept with its ID. Where the newest revision changed or dropped a claim, the row says so in Qualifications and names the newer document.
+- Rows from the earlier unmerged expansion were folded in and reset to `needs review`. Three of its OptiLIGHT IDs collided with different claims and were renumbered OG-25 to OG-27 (see the note in that file).
+- Every new row is `needs review`: the claim text, page and printed reference were checked against the Lumenis document, but the cited publications were not opened. `confirmed` remains only on rows confirmed in the earlier passes.
+- Antares has no qualifying claims yet, and the retina lasers have one. Their files record what was looked at.
+- The five flags and the citation notes below are from the 2026-09-16 pass and still stand; see each product file's Notes for anything added to them.
 
 ## Highest-priority flags
 
