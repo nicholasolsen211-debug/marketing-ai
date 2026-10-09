@@ -15,17 +15,17 @@ See [README.md](README.md) for scope, fields and how to add an entry. Check prod
 | Product | File | Claims | Confirmed | Needs review |
 |---|---|---|---|---|
 | Lumenis corporate | [lumenis-corporate.md](lumenis-corporate.md) | 1 | 1 | 0 |
-| OptiLIFT | [optilift.md](optilift.md) | 23 | 4 | 19 |
-| OptiLIGHT | [optilight.md](optilight.md) | 42 | 7 | 35 |
+| OptiLIFT | [optilift.md](optilift.md) | 23 | 11 | 12 |
+| OptiLIGHT | [optilight.md](optilight.md) | 42 | 23 | 19 |
 | OptiPLUS | [optiplus.md](optiplus.md) | 12 | 2 | 10 |
-| Digital Duet | [digital-duet.md](digital-duet.md) | 18 | 0 | 18 |
-| triLIFT for Eye Care | [trilift-eye-care.md](trilift-eye-care.md) | 12 | 0 | 12 |
-| triLIFT for Aesthetics | [trilift-aesthetics.md](trilift-aesthetics.md) | 14 | 0 | 14 |
-| UltraPulse (CO2) | [ultrapulse.md](ultrapulse.md) | 18 | 0 | 18 |
-| AcuPulse | [acupulse.md](acupulse.md) | 18 | 0 | 18 |
+| Digital Duet | [digital-duet.md](digital-duet.md) | 18 | 3 | 15 |
+| triLIFT for Eye Care | [trilift-eye-care.md](trilift-eye-care.md) | 12 | 6 | 6 |
+| triLIFT for Aesthetics | [trilift-aesthetics.md](trilift-aesthetics.md) | 14 | 8 | 6 |
+| UltraPulse (CO2) | [ultrapulse.md](ultrapulse.md) | 18 | 16 | 2 |
+| AcuPulse | [acupulse.md](acupulse.md) | 18 | 3 | 15 |
 | Retina and glaucoma lasers | [retina-and-glaucoma-lasers.md](retina-and-glaucoma-lasers.md) | 1 | 0 | 1 |
 | Antares | [antares.md](antares.md) | 0 | 0 | 0 |
-| Optima IPL and M22 (legacy) | [optima-ipl-and-m22.md](optima-ipl-and-m22.md) | 14 | 0 | 14 |
+| Optima IPL and M22 (legacy) | [optima-ipl-and-m22.md](optima-ipl-and-m22.md) | 14 | 2 | 12 |
 
 "Confirmed" means a public source was located and its content was checked against the specific claim during this review — not that the claim is cleared for external use. "Needs review" entries say specifically what's unresolved (missing citation, unlocatable source, unpublished evidence, or a number that doesn't reconcile with the cited source).
 
@@ -35,7 +35,8 @@ This update extended the library from three products to every product with mater
 
 - Every earlier row is kept with its ID. Where the newest revision changed or dropped a claim, the row says so in Qualifications and names the newer document.
 - Rows from the earlier unmerged expansion were folded in and reset to `needs review`. Three of its OptiLIGHT IDs collided with different claims and were renumbered OG-25 to OG-27 (see the note in that file).
-- Every new row is `needs review`: the claim text, page and printed reference were checked against the Lumenis document, but the cited publications were not opened. `confirmed` remains only on rows confirmed in the earlier passes.
+- **Publication check (2026-10-09):** every `needs review` row was then checked against the publication it cites (abstract through Europe PMC or PubMed, full text where open access). A row is `confirmed` only where the opened publication contains the specific figure or statement. Each checked row carries a `Publication check 2026-10-09:` sentence saying what was opened and what it says. Rows that stay `needs review` say why: figure not in the paper, figure differs, wrong paper cited, a different device studied, or full text not accessible.
+- **Mismatches worth acting on first:** OptiLIGHT OG-12 (brochure "6.3x" glands; the study gives about 4.7x lower lid) and OG-25 ("48% OSDI" is within-arm and did not differ from sham); OptiLIFT OL-9 and OL-13 (the study used 5 minutes per side, not 7); OptiPLUS OP-3 (no "over 150%" or "over 70%" figure in the study) and OP-12 ("all skin types" against the study's exclusion of Fitzpatrick V-VI); Digital Duet DD-4 and DD-6 (printed DOI points to a different paper) and DD-9 (the 5x figure is a 3-year count); Optima IPL OI-6 (91.3% and 54.7% are not the published figures).
 - Antares has no qualifying claims yet, and the retina lasers have one. Their files record what was looked at.
 - The five flags and the citation notes below are from the 2026-09-16 pass and still stand; see each product file's Notes for anything added to them.
 
